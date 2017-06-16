@@ -15,10 +15,14 @@ namespace ControleViagem.ViewModels
 
         public Command BotaoCommand { get; }
  
-		private void ExecuteSearchCommand(object obj)
+		private async void ExecuteSearchCommand(object obj)
 		{
-            //base._navigationService.NavigateAsync("MasterDetailPageView/BaseNavigationPageView/DetailPageView/Teste");
-            base._navigationService.NavigateAsync("MasterDetailPageView/BaseNavigationPageView/Teste");
+            var url = "/MasterDetailPageView/BaseNavigationPageView/DetailPageView/Teste";
+
+			var uri = new Uri(url, UriKind.Absolute);
+
+			await base._navigationService.NavigateAsync(uri);
+            //base._navigationService.NavigateAsync("MasterDetailPageView/BaseNavigationPageView/Teste");
 		}
 
 	}
