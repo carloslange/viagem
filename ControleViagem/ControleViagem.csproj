@@ -48,6 +48,10 @@
     <Compile Include="Views\MasterDetailPageView.xaml.cs">
       <DependentUpon>MasterDetailPageView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Teste.xaml.cs">
+      <DependentUpon>Teste.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\TesteViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -63,6 +67,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MasterDetailPageView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Teste.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

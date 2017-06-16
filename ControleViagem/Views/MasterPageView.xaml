@@ -9,7 +9,7 @@
         Icon="menu.png" >
 
     <StackLayout BackgroundColor="Blue" Margin="0, 20, 0, 0">
-		<Label Text="Menu"></Label>
+		<Button Text="CliqueTelaA" Command="{Binding BotaoCommand}"></Button>
 	</StackLayout>
     
 </ContentPage>

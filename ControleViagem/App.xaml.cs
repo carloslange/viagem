@@ -33,6 +33,8 @@ namespace ControleViagem
 			Container.RegisterTypeForNavigation<MasterPageView, MasterPageViewModel>();
 			Container.RegisterTypeForNavigation<DetailPageView, DetailPageViewModel>();
 			Container.RegisterTypeForNavigation<BaseNavigationPageView, BaseNavigationPageViewModel>();
+            Container.RegisterTypeForNavigation<Teste, TesteViewModel>();
+
 		}
 	}
 }
