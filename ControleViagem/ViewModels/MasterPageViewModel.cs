@@ -17,8 +17,7 @@ namespace ControleViagem.ViewModels
  
 		private void ExecuteSearchCommand(object obj)
 		{
-			//avigationService.NavigateAsync($"PrismPageD?texto={linha} selecionado!", useModalNavigation: true);
-           
+            //base._navigationService.NavigateAsync("MasterDetailPageView/BaseNavigationPageView/DetailPageView/Teste");
             base._navigationService.NavigateAsync("MasterDetailPageView/BaseNavigationPageView/Teste");
 		}
 
