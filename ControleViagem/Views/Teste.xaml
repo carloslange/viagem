@@ -8,7 +8,7 @@
 
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="tricolor" />
+            <Label Text="tricolor2" />
         </StackLayout>
 	</ContentPage.Content>
     
