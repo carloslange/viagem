@@ -7,6 +7,7 @@ using Microsoft.Practices.Unity;
 using Prism.Unity;
 using UIKit;
 
+
 namespace ControleViagem.iOS
 {
 	// The UIApplicationDelegate for the application. This class is responsible for launching the 
@@ -25,6 +26,9 @@ namespace ControleViagem.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init();
+
+            //para utilizacao do azure e social login
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
 			LoadApplication(new App(new iOSInitializer()));
 

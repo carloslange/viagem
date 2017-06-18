@@ -24,6 +24,7 @@ namespace ControleViagem.ViewModels
 			await _navigationService.NavigateAsync(name);
 		}
 
+
 		public virtual void OnNavigatedFrom(NavigationParameters parameters)
 		{
 		}

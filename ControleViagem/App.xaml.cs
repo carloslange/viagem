@@ -29,12 +29,12 @@ namespace ControleViagem
 
 		protected override void RegisterTypes()
 		{
-			Container.RegisterTypeForNavigation<MasterDetailPageView, MasterDetailPageViewModel>();
-			Container.RegisterTypeForNavigation<MasterPageView, MasterPageViewModel>();
-			Container.RegisterTypeForNavigation<DetailPageView, DetailPageViewModel>();
-			Container.RegisterTypeForNavigation<BaseNavigationPageView, BaseNavigationPageViewModel>();
-            Container.RegisterTypeForNavigation<Teste, TesteViewModel>();
-
+			Container.RegisterTypeForNavigation<MasterDetailPageView>();
+			Container.RegisterTypeForNavigation<MasterPageView>();
+			Container.RegisterTypeForNavigation<DetailPageView>();
+			Container.RegisterTypeForNavigation<BaseNavigationPageView>();
+            Container.RegisterTypeForNavigation<Teste>();
+            Container.RegisterTypeForNavigation<FaceView>();
 		}
 	}
 }

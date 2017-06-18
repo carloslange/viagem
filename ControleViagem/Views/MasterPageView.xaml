@@ -8,8 +8,9 @@
 		Title="MasterPageView"
         Icon="menu.png" >
 
-    <StackLayout BackgroundColor="Blue" Margin="0, 20, 0, 0">
+    <StackLayout Margin="0, 60, 0, 0">
 		<Button Text="CliqueTelaA" Command="{Binding BotaoCommand}"></Button>
+        <Button Text="Facebook" Command="{Binding FacebookCommand}"></Button>
 	</StackLayout>
     
 </ContentPage>

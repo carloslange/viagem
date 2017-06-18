@@ -25,6 +25,9 @@ namespace ControleViagem.Droid
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 
+			//para utilizacao do azure e social login
+			Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+
 			LoadApplication(new App(new AndroidInitializer()));
 		}
 	}
