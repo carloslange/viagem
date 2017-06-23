@@ -1,9 +1,12 @@
-﻿using System;
+﻿﻿using System;
 using ControleViagem.Helpers;
 using ControleViagem.Service;
 using Prism.Navigation;
 using Xamarin.Forms;
 using System.Threading.Tasks;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Collections.Generic;
 
 namespace ControleViagem.ViewModels
 {
@@ -12,7 +15,7 @@ namespace ControleViagem.ViewModels
 		public Command ConectarFacebookCommand { get; }
 		private readonly AzureService _azureService;
 
-		public FaceViewModel(INavigationService navigationService)
+     	public FaceViewModel(INavigationService navigationService)
 			: base(navigationService)
 		{
 			//não utilizar toker armazenado
@@ -31,10 +34,33 @@ namespace ControleViagem.ViewModels
                 await Task.FromResult(true);
             else
                 await _azureService.LoginAsync();
-
+            
+			UserId = Settings.UserId;
+			Token = Settings.AuthToken;
         }
 
-         
+
+		private string _userId;
+		public string UserId
+		{
+			get { return _userId; }
+			set
+			{
+				SetProperty(ref _userId, value);
+			}
+		}
+
+		private string _token;
+		public string Token
+		{
+			get { return _token; }
+			set
+			{
+				SetProperty(ref _token, value);
+			}
+		}
+
+
 	}
 }
 

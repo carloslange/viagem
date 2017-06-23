@@ -13,7 +13,7 @@ namespace ControleViagem.Service
 {
 	public class AzureService
 	{
-		static readonly string AppUrl = "http://viagemteste.azurewebsites.net";
+		static readonly string AppUrl = "https://viagemteste.azurewebsites.net";
 		public MobileServiceClient Client { get; set; } = null;
 
 		public void Initialize()
