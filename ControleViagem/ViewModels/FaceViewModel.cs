@@ -34,7 +34,7 @@ namespace ControleViagem.ViewModels
 
         }
 
-        public 
+         
 	}
 }
 
