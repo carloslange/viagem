@@ -13,6 +13,7 @@ namespace ControleViagem.ViewModels
     public class FaceViewModel : BaseViewModel
     {
 		public Command ConectarFacebookCommand { get; }
+        public Command DadosFacebookCommand { get; }
 		private readonly AzureService _azureService;
 
      	public FaceViewModel(INavigationService navigationService)
@@ -26,6 +27,8 @@ namespace ControleViagem.ViewModels
 			_azureService = DependencyService.Get<AzureService>();
 
 			ConectarFacebookCommand = new Command(async () => await ExecuteConectarFacebookCommandAsync());
+
+            DadosFacebookCommand = new Command(async () => await ExecuteDadosFacebookCommandAsync());
 		}
 
         private async Task ExecuteConectarFacebookCommandAsync()
@@ -39,6 +42,13 @@ namespace ControleViagem.ViewModels
 			Token = Settings.AuthToken;
         }
 
+		private async Task ExecuteDadosFacebookCommandAsync()
+		{
+			
+			var a = await _azureService.GetDadosFace();
+            //await _azureService.GetFotoFace();
+
+		}
 
 		private string _userId;
 		public string UserId
