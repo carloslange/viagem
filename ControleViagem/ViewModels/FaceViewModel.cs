@@ -46,7 +46,9 @@ namespace ControleViagem.ViewModels
 		{
 			
 			var a = await _azureService.GetDadosFace();
-            //await _azureService.GetFotoFace();
+
+
+            //await _azureService.GetFotoFace(a[0].user_claims[0].val);
 
 		}
 
