@@ -47,6 +47,8 @@ namespace ControleViagem.ViewModels
 			
 			var a = await _azureService.GetDadosFace();
 
+            UserId = a[0].user_claims[2].val;
+			Token = a[0].user_claims[1].val;
 
             //await _azureService.GetFotoFace(a[0].user_claims[0].val);
 
