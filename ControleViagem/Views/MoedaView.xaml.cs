@@ -2,9 +2,9 @@
 
 namespace ControleViagem.Views
 {
-    public partial class FaceView : ContentPage
+    public partial class MoedaView : ContentPage
     {
-        public FaceView()
+        public MoedaView()
         {
             InitializeComponent();
         }

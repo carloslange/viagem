@@ -19,11 +19,10 @@ namespace ControleViagem.ViewModels
      	public FaceViewModel(INavigationService navigationService)
 			: base(navigationService)
 		{
-			//não utilizar toker armazenado
+			//não utilizar token armazenado
 			Settings.AuthToken = string.Empty;
 			Settings.UserId = string.Empty;
 
-			//_navigation = navigation;
 			_azureService = DependencyService.Get<AzureService>();
 
 			ConectarFacebookCommand = new Command(async () => await ExecuteConectarFacebookCommandAsync());
@@ -49,8 +48,6 @@ namespace ControleViagem.ViewModels
 
             UserId = a[0].user_claims[2].val;
 			Token = a[0].user_claims[1].val;
-
-            //await _azureService.GetFotoFace(a[0].user_claims[0].val);
 
 		}
 

@@ -60,6 +60,11 @@
     <Compile Include="Authentication\IAuthentication.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Services\AzureService.cs" />
+    <Compile Include="Services\MoedaService.cs" />
+    <Compile Include="ViewModels\MoedaViewModel.cs" />
+    <Compile Include="Views\MoedaView.xaml.cs">
+      <DependentUpon>MoedaView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -81,6 +86,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FaceView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MoedaView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

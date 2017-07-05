@@ -35,6 +35,7 @@ namespace ControleViagem
 			Container.RegisterTypeForNavigation<BaseNavigationPageView>();
             Container.RegisterTypeForNavigation<Teste>();
             Container.RegisterTypeForNavigation<FaceView>();
+			Container.RegisterTypeForNavigation<MoedaView>();
 		}
 	}
 }

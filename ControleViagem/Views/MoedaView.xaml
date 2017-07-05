@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="ControleViagem.Views.MoedaView"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+    prism:ViewModelLocator.AutowireViewModel="True" 
+    Title="Moeda">
+    
+	<StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand">
+
+        <Label Text="Dolar" TextColor="Black" FontSize="Small"/>
+        <Label Text="{Binding Dolar}" TextColor="Gray" FontSize="Medium"/>
+        <Label Text="Euro" TextColor="Black" FontSize="Small"/>
+        <Label Text="{Binding Euro}" TextColor="Gray" FontSize="Medium"/>
+
+        <Button Text="Converter" Command="{Binding ConverterMoedaCommand}" />
+
+    </StackLayout>
+    
+</ContentPage>

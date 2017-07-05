@@ -67,19 +67,6 @@ namespace ControleViagem.Service
             return faceUser;
 
         }
-		
-   //     public async Task GetFotoFace(string user)
-   //     {
-			
-   //         var client = new HttpClient();
-			//var fbUser = await client.GetAsync("https://graph.facebook.com/me/" + user + "/picture");
-			//var response = await fbUser.Content.ReadAsStringAsync();
-			//var jo = JObject.Parse(response);
-
-            //var teste = await Client.InvokeApiAsync("https://graph.facebook.com/me?fields=picture");
-			//var teste = await Client.InvokeApiAsync("https://graph.facebook.com/me?access_token=EAAQhnZAII9hIBAIuMe1Dj8ijeQtKRLKGZCuc7wGcxlTR6J9J1MIbnkemhq6rfsgICrScNBdRCQuZAHUmoiKi4NAV7ZA679wr9JI1D1KK9dAoBjLBZBsKJbI6rIBxl2ziixA5d6W10eLL67OrQOCZAX0QVNaDhaZAkZAK53WAm2jj4gZDZD&fields=picture");
-
-		//}
 	
 	}
 

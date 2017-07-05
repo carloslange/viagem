@@ -5,12 +5,13 @@
 		xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
 		prism:ViewModelLocator.AutowireViewModel="True" 
 		x:Class="ControleViagem.Views.MasterPageView"
-		Title="MasterPageView"
+        Title="master"
         Icon="menu.png" >
 
     <StackLayout Margin="0, 60, 0, 0">
 		<Button Text="CliqueTelaA" Command="{Binding BotaoCommand}"></Button>
         <Button Text="Facebook" Command="{Binding FacebookCommand}"></Button>
+        <Button Text="Moeda" Command="{Binding MoedaCommand}"></Button>
 	</StackLayout>
     
 </ContentPage>
